@@ -21,7 +21,9 @@ def set_theme(animals, objects):
 def chosse_word(list):
     return choice(list)
 
-def build_character(w_line, head, left_body_right, left_foot_right):
+def build_character(l_used, w_line, head, left_body_right, left_foot_right):    
+    print(f'Letters Used: {l_used}')
+    print()
     print(Fore.WHITE + '______')
     print(Fore.WHITE +'|    |')
     print(Fore.WHITE + f'|    ' + Fore.RED + head)
@@ -49,23 +51,6 @@ def create_structure(word):
     #     for i in range(len(word)):
     #         if word_guess == word[i]:
     #             word_lines[word.index(word[i])] = i
-    
-    # if attemps == 1:
-    #     head = 'o'
-    # elif attemps == 2:
-    #     left_body_right = '|'
-    # elif attemps == 3:
-    #     left_body_right = '||'
-    # elif attemps == 4:
-    #     left_body_right = '|||'
-    # elif attemps == 5:
-    #     left_foot_right = '|'
-    # elif attemps == 6:
-    #     left_foot_right = '||'
-    #     build_character(word_lines, head, left_body_right, left_foot_right)
-    #     dotket.DOTKET_error(True, f'You lose, the word was "{word}"')
-    #     break
-    
         
     
         
